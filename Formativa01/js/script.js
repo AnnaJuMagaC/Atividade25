@@ -443,5 +443,14 @@ const exercicio24 = () => {
   }
 };
 //-------------------------------------------------------------Atividade 25-------------------------------------------------------------
-
-//22,25,13
+const exercicio25 = () => {
+  let resposta = document.getElementById("resposta");
+  let erro = document.getElementById("erro");
+  let num1 = document.getElementById("num1").value;
+  let num2 = document.getElementById("num2").value;
+  let num3 = document.getElementById("num3").value;
+  let numeros = [num1, num2, num3];
+  numeros.sort((a, b) => a - b);
+  resposta.innerHTML = "Os números em ordem crescente são " + numeros;
+  erro.innerHTML = "";
+};
